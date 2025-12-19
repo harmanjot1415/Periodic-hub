@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lanthanum Element Card</title>
+  <style>
+    nav {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(90deg, rgba(20,20,20,0.95), rgba(40,40,40,0.95));
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6fff00;
+  text-shadow: 0 0 12px #6fff00;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  background: #00e1ff;
+  box-shadow: 0 0 10px #00e1ff;
+}
+
+nav ul li a.active {
+  color: #fff;
+  background: #6fff00;
+  box-shadow: 0 0 10px #6fff00;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+    .card {
+      background: #ffffff;
+      border: 2px solid #6ee7ff;
+      border-radius: 0; 
+      padding: 40px;
+      width: 100vw; 
+      height: 100vh;  
+      box-sizing: border-box;
+      box-shadow: none;
+      overflow-y: auto; 
+    }
+    .symbol {
+      font-size: 96px;
+      font-weight: bold;
+      color: #6fff00;
+      text-align: center;
+    }
+    .name {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .number {
+      text-align: center;
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .stats, .extra {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+    .stats span, .extra span {
+      font-weight: bold;
+      color: #0077ff;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0 8px;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Periodic Table</div>
+   <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="learm.html">Learn</a></li>
+      <li><a href="table.html">Periodic Table</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </nav>
+  <div class="card">
+    <div class="symbol">La</div>
+    <div class="name">Lanthanum</div>
+    <div class="number">Atomic Number: 57</div>
+
+    <div class="stats">
+      <p><span>Atomic Mass:</span> 138.905</p>
+      <p><span>Electronegativity:</span> 1.10</p>
+      <p><span>Density:</span> 6.15 g/cm³</p>
+      <p><span>Melting Point:</span> 1193 K</p>
+      <p><span>Boiling Point:</span> 3737 K</p>
+      <p><span>Electron Config:</span> [Xe] 5d¹ 6s²</p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Discovery</div>
+      <p>Lanthanum was discovered in 1839 by <span>Carl Gustaf Mosander</span> in Sweden.</p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Isotopes</div>
+      <p>Lanthanum has one stable isotope: <span>¹³⁹La</span>. It also has a long-lived radioactive isotope <span>¹³⁸La</span>.</p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Uses</div>
+      <p>- Optical lenses and camera glass<br>
+         - Hydrogen storage materials<br>
+         - Nickel-metal hydride batteries<br>
+         - Catalysts in petroleum refining</p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Fun Fact</div>
+      <p>Lanthanum’s name comes from the Greek word <span>“lanthanein”</span>, meaning “to lie hidden.”</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Actinium Element Card</title>
+  <style>
+  nav {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(90deg, rgba(20,20,20,0.95), rgba(40,40,40,0.95));
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6fff00;
+  text-shadow: 0 0 12px #6fff00;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  background: #00e1ff;
+  box-shadow: 0 0 10px #00e1ff;
+}
+
+nav ul li a.active {
+  color: #fff;
+  background: #6fff00;
+  box-shadow: 0 0 10px #6fff00;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+    .card {
+      background: #ffffff;
+      border: 2px solid #6ee7ff;
+      border-radius: 0; 
+      padding: 40px;
+      width: 100vw; 
+      height: 100vh;  
+      box-sizing: border-box;
+      box-shadow: none;
+      overflow-y: auto; 
+    }
+    .symbol {
+      font-size: 96px;
+      font-weight: bold;
+      color: #6fff00;
+      text-align: center;
+    }
+    .name {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .number {
+      text-align: center;
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .stats, .extra {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+    .stats span, .extra span {
+      font-weight: bold;
+      color: #0077ff;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0 8px;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+  /* .{border: 1px solid #DADCE0;
+    background-color: white;
+    height: 36px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;} */
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Periodic Table</div>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="learm.html">Learn</a></li>
+      <li><a href="table.html">Periodic Table</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </nav>
+  <div class="card">
+    <div class="symbol">Ac</div>
+    <div class="name">Actinium</div>
+    <div class="number">Atomic Number: 89</div>
+
+    <div class="stats">
+      <p><span>Atomic Mass:</span> 227</p>
+      <p><span>Electronegativity:</span> 1.1</p>
+      <p><span>Density:</span> 10.07 g/cm³</p>
+      <p><span>Melting Point:</span> 1323 K (1050 °C)</p>
+      <p><span>Boiling Point:</span> 3473 K (3200 °C)</p>
+      <p><span>Electron Config:</span> [Rn] 6d<sup>1</sup> 7s<sup>2</sup></p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Discovery</div>
+      <p>Actinium was discovered in 1899 by <span>Friedrich Oskar Giesel</span>. Its name comes from the Greek word <span>"aktinos"</span>, meaning ray or beam.</p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Isotopes</div>
+      <p>Actinium has no stable isotopes. The most common is <span>Ac‑227</span>, with a half‑life of about 21.8 years.</p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Uses</div>
+      <p>- Radiation therapy (experimental)<br>
+         - Neutron sources<br>
+         - Research in nuclear chemistry<br>
+         - Limited applications due to radioactivity</p>
+    </div>
+
+    <div class="extra">
+      <div class="section-title">Fun Fact</div>
+      <p>Actinium was the <span>first non‑primordial radioactive element discovered</span>, paving the way for nuclear science.</p>
+    </div>
+  </div>
+</body>
+</html>

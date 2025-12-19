@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Periodic Table Home</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #00000000;
+      color: #33333300;
+      overflow-x: hidden;
+      animation: fadeIn 1s ease;
+    }
+
+
+
+    nav {
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background: rgba(190, 190, 190, 0.338);
+      
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #222;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: #333;
+      color: #fff9f9;
+      transform: translateY(-2px);
+    }
+
+    nav ul li a.active {
+      background: rgb(101, 98, 98);
+      color: white;
+    }
+
+
+
+    header {
+      color: rgb(255, 255, 255);
+      text-align: center;
+
+    }
+
+    .hr {
+      color: #ffffff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+
+
+    main {
+      max-width: 800px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+
+    }
+
+    section {
+      background: rgb(0, 0, 0);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      background: rgba(61, 61, 61, 0.435);
+      
+      animation: sectionReveal 1s ease forwards;
+    }
+
+    section:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 32px rgba(203, 203, 203, 0.494);
+      transition-duration: 0.4s;
+    }
+
+    section:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    section:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    section:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    section:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+
+    section:nth-child(5) {
+      animation-delay: 1.0s;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 6px;
+    }
+
+    section h2:hover {
+      color: #ffffff;
+      transform: translateX(6px);
+      transition-duration: 0.4s;
+    }
+
+    section p {
+      margin-top: 10px;
+      line-height: 1.6;
+      color: #ffffff;
+    }
+
+
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #ffffff;
+      border-top: 1px solid #000000;
+      margin-top: 3rem;
+    }
+
+    
+
+
+
+
+    body {
+      background-image: url("learn.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      margin: 0;
+      height: 100%;
+    }
+
+
+    body::before {
+     
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.439);
+      z-index: -1;
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav>
+    <div class="logo">Periodic Table</div>
+    <ul>
+      <li><a href="Home.html" class="active">Home</a></li>
+      <li><a href="learm.html">Learn</a></li>
+      <li><a href="table.html">Periodic Table</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to the Periodic Table Learning Hub</h1>
+  </header>
+
+  <main class="op">
+    <section class="sec">
+      <h2>Discover the Building Blocks of Matter</h2>
+      <p>The periodic table organizes all known chemical elements based on their atomic number, electron configuration,
+        and chemical properties.</p>
+    </section>
+
+    <section>
+      <h2>Explore and Learn</h2>
+      <p>Navigate through detailed information about each element, their structure, history, and uses.</p>
+    </section>
+
+    <section>
+      <h2>Interactive Features Coming Soon</h2>
+      <p>Interactive quizzes, visualizations, and element cards will be added soon.</p>
+    </section>
+
+    <section>
+      <h2>Why the Periodic Table Is Important</h2>
+      <p>It helps predict chemical behavior, understand reactions, and identify trends across elements.</p>
+    </section>
+
+    <section>
+      <h2>History of the Periodic Table</h2>
+      <p>Dmitri Mendeleev introduced the first systematic table in 1869, arranging elements by increasing atomic mass.
+      </p>
+    </section>
+
+    <section>
+      <h2>How Elements Are Classified</h2>
+      <p>Elements are divided into metals, non-metals, metalloids, noble gases, halogens, and more.</p>
+    </section>
+
+    <section>
+      <h2>Periodic Trends</h2>
+      <p>Learn about atomic radius, ionization energy, electronegativity, and how they change across periods and groups.
+      </p>
+    </section>
+
+    <section>
+      <h2>Future Updates</h2>
+      <p>More animations, dark mode, element filters, and search features will be added soon.</p>
+    </section>
+
+
+  </main>
+
+  <footer>
+    &copy; 2025 Periodic Table Learning Hub — Designed by Harmanjot Singh
+  </footer>
+
+</body>
+
+</html>

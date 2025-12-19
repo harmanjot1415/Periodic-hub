@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periodic Table History</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
+      color: #eee;
+      overflow-x: hidden;
+      animation: fadeIn 1s ease;
+    }
+
+    nav {
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(12px);
+      background: linear-gradient(90deg, rgba(20, 20, 20, 0.95), rgba(40, 40, 40, 0.95));
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0 0 12px 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 0.8s ease;
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ccc;
+      text-shadow: 0 0 10px #666;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #bbb;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+      background: #333;
+      box-shadow: 0 0 10px #444;
+    }
+
+    nav ul li a.active {
+      color: #fff;
+      background: #555;
+      box-shadow: 0 0 10px #555;
+    }
+
+    header {
+      background: #22222200;
+      color: #eee;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    section {
+      background: #1a1a1a30;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+      transform: translateY(30px);
+      opacity: 0;
+      animation: sectionReveal 1s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    section:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    section:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    section:nth-child(5) {
+      animation-delay: 0.8s;
+    }
+
+    section:nth-child(6) {
+      animation-delay: 1.0s;
+    }
+
+    section:nth-child(7) {
+      animation-delay: 1.2s;
+    }
+
+    section:nth-child(8) {
+      animation-delay: 1.4s;
+    }
+
+    section:nth-child(9) {
+      animation-delay: 1.6s;
+    }
+
+    section:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #ddd;
+      border-bottom: 2px solid #444;
+      padding-bottom: 6px;
+      transition: 0.3s ease;
+    }
+
+    section h2:hover {
+      color: #fff;
+      transform: translateX(6px);
+      text-shadow: 0 0 10px #666;
+    }
+
+    section p,
+    section ul {
+      line-height: 1.6;
+      color: #bbb;
+    }
+
+    @keyframes sectionReveal {
+      0% {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+
+    
+    body {
+      background-image: url("learn.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      margin: 0;
+      height: 100%;
+    }
+
+    /* Add a blur overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background: rgba(0, 0, 0, 0.439);
+      /* Optional dark overlay */
+      z-index: -1;
+      /* Keep it behind content */
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Periodic Table</div>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="learm.html">Learn</a></li>
+      <li><a href="table.html">Periodic Table</a></li>
+      <li><a href="categories.html">Categories</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>History of the Periodic Table</h1>
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>The periodic table organizes chemical elements by atomic number and properties.</p>
+  </section>
+
+  <section>
+    <h2>History</h2>
+    <ul>
+      <li>1869: Dmitri Mendeleev created the first periodic table.</li>
+      <li>1871: He predicted properties of undiscovered elements.</li>
+      <li>20th Century: Henry Moseley reorganized by atomic number.</li>
+      <li>Modern Era: Glenn Seaborg added the actinide series.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Early Attempts Before Mendeleev</h2>
+    <p>Before Mendeleev, chemists attempted to classify elements based on mass and reactions, including Döbereiner’s
+      Triads and Newlands’ Law of Octaves.</p>
+  </section>
+
+  <section>
+    <h2>Mendeleev’s Genius</h2>
+    <p>Mendeleev left intentional gaps for undiscovered elements and accurately predicted properties of gallium,
+      scandium, and germanium.</p>
+  </section>
+
+  <section>
+    <h2>Why It Matters</h2>
+    <p>The periodic table helps predict chemical behavior and is essential for science.</p>
+  </section>
+
+  <section>
+    <h2>Modern Periodic Table</h2>
+    <p>The modern table is arranged by atomic number, electron configuration, and recurring chemical trends, making it
+      more accurate than early versions.</p>
+  </section>
+
+  <section>
+    <h2>Future of the Periodic Table</h2>
+    <p>Scientists are working to create new superheavy elements, expanding the table beyond element 118.</p>
+  </section>
+
+  <section>
+    <h2>Fun Facts</h2>
+    <p>Mendeleev’s predictions were confirmed when new elements were discovered.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Periodic Table Learning Hub — Designed by Harmanjot Singh
+  </footer>
+
+</body>
+
+</html>
